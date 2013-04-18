@@ -408,7 +408,7 @@ To automatically copy the files, set the environment variable
     <Setter Property="Background" Value="{Binding RelativeSource={RelativeSource Self},Path=Ribbon.Background}" />
     <Setter Property="BorderBrush" Value="Transparent"/>
     <Setter Property="CheckedBorderBrush" Value="{Binding RelativeSource={RelativeSource Self}, Path=Ribbon.BorderBrush}"/>
-    <Setter Property="CheckedBackground" Value="{StaticResource &#298;}"/>
+    <Setter Property="CheckedBackground" Value="Transparent"/>
     <Setter Property="MouseOverBorderBrush" Value="{Binding RelativeSource={RelativeSource Self}, Path=Ribbon.MouseOverBorderBrush}"/>
     <Setter Property="FocusedBorderBrush" Value="{Binding RelativeSource={RelativeSource Self}, Path=Ribbon.FocusedBorderBrush}"/>
     <Setter Property="FocusVisualStyle" Value="{x:Null}" />
@@ -2194,7 +2194,7 @@ To automatically copy the files, set the environment variable
 
                     <ContentControl x:Name="mainItemsPresenterHost" Grid.ColumnSpan="3" Grid.Row="2" Focusable="False">
                         <Border x:Name="groupsBorder"
-                                    Background="{StaticResource &#205;}" 
+                                    Background="Transparent"
                                     BorderBrush="{TemplateBinding BorderBrush}"
                                     BorderThickness="1,0,1,1"
                                     Height="{StaticResource &#211;}"
@@ -5119,7 +5119,7 @@ To automatically copy the files, set the environment variable
     <Setter Property="Template" Value="{StaticResource &#290;}" />
     <Setter Property="Background" Value="Transparent" />
     <Setter Property="BorderBrush" Value="{Binding RelativeSource={RelativeSource Self}, Path=Ribbon.BorderBrush}" />
-    <Setter Property="MouseOverBackground" Value="{StaticResource &#284;}"/>
+    <Setter Property="MouseOverBackground" Value="Transparent"/>
     <Setter Property="MouseOverBorderBrush" Value="Transparent"/>
     <Setter Property="ToolTipService.InitialShowDelay" Value="{StaticResource &#224;}" />
     <Setter Property="ToolTipService.ShowDuration" Value="{StaticResource &#225;}" />
@@ -7832,11 +7832,11 @@ To automatically copy the files, set the environment variable
                                 <Rectangle x:Name="OverlayRect"
                                            Height="{Binding ElementName=ScrollViewer,Path=ActualHeight}"
                                            Width="{Binding ElementName=ScrollViewer,Path=ActualWidth}"
-                                           Fill="{StaticResource &#205;}"/>
+                                           Fill="Transparent"/>
                                 <Rectangle x:Name="InnerOverlayRect"
                                            Height="{Binding ElementName=ScrollViewer,Path=ActualHeight}"
                                            Width="{Binding ElementName=ScrollViewer,Path=ActualWidth}"
-                                           Fill="{StaticResource &#204;}"/>
+                                           Fill="Transparent"/>
                             </Canvas>
 
                             <ItemsPresenter x:Name="ItemsPresenter" />
