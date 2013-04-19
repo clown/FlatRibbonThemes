@@ -1519,7 +1519,7 @@ To automatically copy the files, set the environment variable
                                 MinHeight="50"
                                 CornerRadius="2">
                              <Border x:Name="InnerBorder"
-                                     Background="{StaticResource &#202;}"
+                                     Background="Transparent"
                                      BorderThickness="0"
                                      BorderBrush="Transparent"
                                      HorizontalAlignment="Stretch"
