@@ -4664,7 +4664,7 @@ To automatically copy the files, set the environment variable
                         <Border x:Name="LabelBorder" 
                                 Grid.Row="1" 
                                 Grid.RowSpan="2" 
-                                Background="{StaticResource &#278;}">
+                                Background="Transparent">
                             <ContentPresenter ribbon:RibbonTwoLineText.HasTwoLines="True"
                                               ribbon:RibbonTwoLineText.PathData="{StaticResource &#255;}"/>
                         </Border>
@@ -4749,8 +4749,8 @@ To automatically copy the files, set the environment variable
                         <Setter TargetName="PART_HotBackground" Property="Opacity" Value="1"/>
                         <Setter TargetName="PART_HotBackground" Property="Background" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=CheckedBackground}"/>
                         <Setter TargetName="PART_HotBackground" Property="BorderBrush" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=CheckedBorderBrush}"/>
-                        <Setter TargetName="ImageOuterBorder" Property="Background" Value="#20BBBBBB"/>
-                        <Setter TargetName="LabelBorder" Property="Background" Value="{StaticResource &#279;}"/>
+                        <Setter TargetName="ImageOuterBorder" Property="Background" Value="Transparent"/>
+                        <Setter TargetName="LabelBorder" Property="Background" Value="Transparent"/>
                     </MultiDataTrigger>
 
                     <MultiDataTrigger>
@@ -5013,7 +5013,7 @@ To automatically copy the files, set the environment variable
                             BorderBrush="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Ribbon.BorderBrush}"
                             BorderThickness="1"/>
                     <Border Name="PART_HotBackground"
-                            Background="{TemplateBinding MouseOverBackground}"
+                            Background="{TemplateBinding Background}"
                             BorderBrush="{TemplateBinding MouseOverBorderBrush}"
                             Opacity="0"
                             Grid.RowSpan="2"

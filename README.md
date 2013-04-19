@@ -12,6 +12,8 @@ FlatRibbonThemes の *.xaml は、以下の効果を無効にします。
     * CheckedBackground （タブの選択状態時）のグラデーション
 * RibbonGroup
     * PART_HotBackground.Background （グループへのマウスオーバ時）のグラデーション
+    * RibbonToggleButton （内容省略時に表示されるグループ用ボタン）の LabelBorder.Background, ボタン押下時 (IsChecked) の ImageOuterBorder.Background, LabelBorder.Background のグラデーション
+    * PART_Popup （RibbonToggleButton を押下時に表示されるポップアップ）の PART_HotBackground.Background のグラデーション
 
 ## Installation
 
