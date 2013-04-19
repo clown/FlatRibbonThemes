@@ -8,6 +8,9 @@ FlatRibbonThemes の *.xaml は、以下の効果を無効にします。
 
 * Ribbon
     * Background のグラデーション
+* RibbonApplicationMenu
+    * RibbonToggleButton の MiddleBorder.Background, InnerBorder.Background のグラデーション
+    * PART_Popup.PopupBorder の HeaderOverlayBorder.Background, MainPaneBorder.Background, PART_SubmenuPlaceholder.Background, FooterBackgroundOverlayBorder.Background のグラデーション、および強調効果    * RibbonApplicationMenuItem.PART_Popup.PopupOverlayBorder.Background, RibbonApplicationSplitMenuItem.PART_Popup.PopupOverlayBorder.Background の強調効果
 * RibbonTabHeader
     * CheckedBackground （タブの選択状態時）のグラデーション
 * RibbonGroup
@@ -28,5 +31,6 @@ FlatRibbonThemes の *.xaml は、以下の効果を無効にします。
 
 ### 2013-04-19
 * Ribbon.Background, RibbonTabHeader.CheckedBackground のグラデーション効果を削除しました。
-* RibbonGroup に関して、PART_HotBackground.Background, RibbonToggleButton.LabelBorder.Background, RibbonToggleButton.ImageOuterBorder.Background, PART_Popup.PART_HotBackground.Background のグラデーション、または強調効果を削除しました。
+* RibbonGroup に関して、PART_HotBackground.Background, RibbonToggleButton.LabelBorder.Background, RibbonToggleButton.ImageOuterBorder.Background, PART_Popup.PART_HotBackground.Background のグラデーション、および強調効果を削除しました。
 * RibbonToolTip.InnerBorder.Background のグラデーション効果を削除しました。
+* RibbonApplicationMenu に関わるグラデーション、および強調効果を削除しました。
