@@ -274,8 +274,8 @@ To automatically copy the files, set the environment variable
 <Geometry x:Key="&#236;">M 0,0 L 4,3.5 L 0,7 Z</Geometry>
 
 <!-- RibbonDropDownButton -->
-<SolidColorBrush x:Key="&#239;" Color="#F0FFFFFF" />
-    
+<SolidColorBrush x:Key="&#239;" Color="Transparent" />
+
 <!-- DropDown controls -->
 <SolidColorBrush x:Key="&#230;" Color="#FFE5EFF9" />
 <SolidColorBrush x:Key="&#293;" Color="#FF6C747D" />
@@ -5189,7 +5189,7 @@ To automatically copy the files, set the environment variable
                                     Background="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Ribbon.Background}"
                                     BorderBrush="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Ribbon.BorderBrush}">
                                 <Grid x:Name="SideBarOverlay"
-                                      Background="{StaticResource &#228;}">
+                                      Background="Transparent">
                                     <Image x:Name="Image"
                                            Width="16"
                                            Height="16"
