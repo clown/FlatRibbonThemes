@@ -11,6 +11,8 @@ FlatRibbonThemes の *.xaml は、以下の効果を無効にします。
 * RibbonApplicationMenu
     * RibbonToggleButton の MiddleBorder.Background, InnerBorder.Background のグラデーション
     * PART_Popup.PopupBorder の HeaderOverlayBorder.Background, MainPaneBorder.Background, PART_SubmenuPlaceholder.Background, FooterBackgroundOverlayBorder.Background のグラデーション、および強調効果    * RibbonApplicationMenuItem.PART_Popup.PopupOverlayBorder.Background, RibbonApplicationSplitMenuItem.PART_Popup.PopupOverlayBorder.Background の強調効果
+* RibbonMenuItem
+    * SubMenuInnerBorder (&#239;), PART_SideBarBorder の Background の色
 * RibbonTabHeader
     * CheckedBackground （タブの選択状態時）のグラデーション
 * RibbonGroup
@@ -28,6 +30,9 @@ FlatRibbonThemes の *.xaml は、以下の効果を無効にします。
 4. Visual Studio でビルドを実行し、RibbonControlsLibrary プロジェクトが生成した RibbonControlsLibrary.dll を標準の dll の代わりに使用します。
 
 ## History
+
+### 2013-04-25
+* RibbonMenuItem の背景色をリセットしました。
 
 ### 2013-04-19
 * Ribbon.Background, RibbonTabHeader.CheckedBackground のグラデーション効果を削除しました。
