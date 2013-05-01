@@ -2119,15 +2119,10 @@ To automatically copy the files, set the environment variable
 <!--=================================================================
         Ribbon
     ==================================================================-->
-<SolidColorBrush x:Key="&#204;" Color="#60FFFFFF"/>
 <SolidColorBrush x:Key="&#200;" Color="#DFE9F5" />
 <SolidColorBrush x:Key="&#201;" Color="#B9C9DA" />
-<LinearGradientBrush x:Key="&#205;" StartPoint="0.5,0.0" EndPoint="0.5,1.0" >
-    <GradientStop Color="#EEFFFFFF" Offset="0.0"/>
-    <GradientStop Color="#BBFFFFFF" Offset="0.1"/>
-    <GradientStop Color="#05FFFFFF" Offset="0.5"/>
-    <GradientStop Color="#20FFFFFF" Offset="1.0"/>
-</LinearGradientBrush>
+<SolidColorBrush x:Key="&#204;" Color="Transparent"/>
+<SolidColorBrush x:Key="&#205;" Color="Transparent" />
 
 <Style x:Key="{x:Type ribbon:Ribbon}"  TargetType="{x:Type ribbon:Ribbon}">
     <Style.Resources>
