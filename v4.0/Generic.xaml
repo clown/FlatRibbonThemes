@@ -4537,16 +4537,8 @@ To automatically copy the files, set the environment variable
     ==================================================================-->
     
 <SolidColorBrush x:Key="&#277;" Color="#50FFFFFF"/>
-
-<RadialGradientBrush x:Key="&#278;" GradientOrigin="0.5,1" Center="0.5,0.5"  RadiusX="1" RadiusY="0.5">
-    <GradientStop Offset="0" Color="#30FFFFFF"/>
-    <GradientStop Offset="1" Color="#08808080"/>
-</RadialGradientBrush>
-
-<RadialGradientBrush x:Key="&#279;" GradientOrigin="0.5,0.95" Center="0.5,1"  RadiusX="0.9" RadiusY="0.5">
-    <GradientStop Offset="0" Color="#AAFFFFFF"/>
-    <GradientStop Offset="1" Color="#40BBBBBB"/>
-</RadialGradientBrush>
+<SolidColorBrush x:Key="&#278;" Color="Transparent" />
+<SolidColorBrush x:Key="&#279;" Color="Transparent" />
 
 <SolidColorBrush x:Key="&#280;" Color="#40FFFFFF" />
 
@@ -4557,11 +4549,7 @@ To automatically copy the files, set the environment variable
 <SolidColorBrush x:Key="&#282;" Color="#AEBECF" />
 <SolidColorBrush x:Key="&#283;" Color="#FCFCFC" />
 
-<LinearGradientBrush x:Key="&#284;" StartPoint="0.0,0.5" EndPoint="1.0,0.5">
-    <GradientStop Color="#01FFFFFF" Offset="0.0"></GradientStop>
-    <GradientStop Color="#80FFFFFF" Offset="0.5"></GradientStop>
-    <GradientStop Color="#01FFFFFF" Offset="1.0"></GradientStop>
-</LinearGradientBrush>
+<SolidColorBrush x:Key="&#284;" Color="Transparent" />
 
 <LinearGradientBrush x:Key="&#285;" StartPoint="0,0" EndPoint="0,1" >
     <GradientStop Color="#F5F9FD" Offset="0" />
