@@ -7972,12 +7972,7 @@ To automatically copy the files, set the environment variable
     <GradientStop Offset="1" Color="Transparent" />
 </LinearGradientBrush>
 
-<LinearGradientBrush x:Key="&#218;" StartPoint="0,0" EndPoint="0,1">
-    <GradientStop Offset="0" Color="#A0FFFFFF" />
-    <GradientStop Offset="0.5" Color="#60FFFFFF" />
-    <GradientStop Offset="0.5" Color="Transparent" />
-    <GradientStop Offset="1" Color="#D0FFFFFF" />
-</LinearGradientBrush>
+<SolidColorBrush x:Key="&#218;" Color="Transparent" />
 
 <LinearGradientBrush x:Key="&#219;" StartPoint="0,0" EndPoint="0,1">
     <GradientStop Offset="0" Color="#90FFFFFF" />
@@ -7986,14 +7981,7 @@ To automatically copy the files, set the environment variable
     <GradientStop Offset="1" Color="Transparent" />
 </LinearGradientBrush>
 
-<LinearGradientBrush x:Key="&#220;" StartPoint="0,0" EndPoint="0,1">
-    <GradientStop Offset="0" Color="#A0FFFFFF" />
-    <GradientStop Offset="0.2" Color="#90FFFFFF" />
-    <GradientStop Offset="0.4" Color="#80FFFFFF" />
-    <GradientStop Offset="0.6" Color="#50FFFFFF" />
-    <GradientStop Offset="0.8" Color="Transparent" />
-    <GradientStop Offset="1" Color="#30FFFFFF" />
-</LinearGradientBrush>
+<SolidColorBrush x:Key="&#220;" Color="Transparent" />
 
 <RadialGradientBrush x:Key="&#221;">
     <GradientStop Offset="0" Color="LightGray" />
@@ -8247,7 +8235,7 @@ To automatically copy the files, set the environment variable
                                                 BorderThickness="0,0,0,1"
                                                 CornerRadius="2,2,0,0" />
                                         <Border x:Name="HeaderOverlayBorder"
-                                                BorderBrush="{StaticResource &#227;}"
+                                                BorderBrush="{Binding RelativeSource={RelativeSource AncestorType={x:Type ribbon:RibbonMenuButton}}, Path=Ribbon.BorderBrush}"
                                                 Background="{StaticResource &#218;}"
                                                 BorderThickness="0,0,0,1"
                                                 CornerRadius="2,2,0,0" />
@@ -8258,7 +8246,7 @@ To automatically copy the files, set the environment variable
                                                 <ColumnDefinition Width="300" />
                                             </Grid.ColumnDefinitions>
                                             <Border x:Name="MainPaneBorder"
-                                                    Background="{StaticResource &#229;}">
+                                                    Background="Transparent">
                                                 <Grid>
                                                 <Grid.RowDefinitions>
                                                     <RowDefinition Height="Auto" />
@@ -8353,7 +8341,7 @@ To automatically copy the files, set the environment variable
                                         <Border x:Name="FooterOverlayBorder"
                                                 VerticalAlignment="Stretch"
                                                 HorizontalAlignment="Stretch"
-                                                BorderBrush="{StaticResource &#227;}"
+                                                BorderBrush="{Binding RelativeSource={RelativeSource AncestorType={x:Type ribbon:RibbonMenuButton}}, Path=Ribbon.BorderBrush}"
                                                 Background="Transparent"
                                                 BorderThickness="0,1,0,0"
                                                 CornerRadius="0,0,2,2" />
