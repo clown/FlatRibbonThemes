@@ -4603,7 +4603,7 @@ To automatically copy the files, set the environment variable
                             CornerRadius="2" 
                             BorderThickness="1" 
                             Margin="1" 
-                            BorderBrush="#EAF1FB" />
+                            BorderBrush="{TemplateBinding Foreground}" />
                     <Border x:Name="ButtonOuterBorder" 
                             BorderBrush="{TemplateBinding BorderBrush}" 
                             Background="{TemplateBinding Background}"
