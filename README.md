@@ -7,6 +7,7 @@ FlatRibbonThemes は、Microsoft Ribbon for WPF のデザインをカスタマ�
 FlatRibbonThemes の *.xaml は、以下の色、効果を修正します。括弧内で表記している記号は、オリジナルの Generic.xaml で定義されているキー名を表します。
 
 * 共通色
+    * &#203 ... #FF9E9E9E -> SystemColors.GrayTextColor
     * &#227 ... #80FFFFFF -> SystemColors.ControlColor
     * &#229 ... #B8FFFFFF -> SystemColors.ControlLightColor
     * &#263 ... #EEFFFFFF -> SystemColors.WindowColor
