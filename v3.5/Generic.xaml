@@ -2195,7 +2195,7 @@ To automatically copy the files, set the environment variable
                                     BorderThickness="1,0,1,1"
                                     Height="{StaticResource &#211;}"
                                     SnapsToDevicePixels="True">
-                            <Border BorderThickness="0,0,0,1" Margin="0,0,0,1" BorderBrush="{StaticResource &#204;}" SnapsToDevicePixels="True">
+                            <Border BorderThickness="0,0,0,0" Margin="0,0,0,0" BorderBrush="{StaticResource &#204;}" SnapsToDevicePixels="True">
                                 <ItemsPresenter Name="ItemsPresenter" />
                             </Border>
                         </Border>
