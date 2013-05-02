@@ -5115,12 +5115,7 @@ To automatically copy the files, set the environment variable
     </Style.Triggers>
 </Style>
 
-<LinearGradientBrush x:Key="&#228;" StartPoint="0,0" EndPoint="1,0" >
-    <GradientStop Offset="0" Color="#A0FFFFFF" />
-    <GradientStop Offset="0.4" Color="#80FFFFFF" />
-    <GradientStop Offset="0.8" Color="#0AFFFFFF" />
-    <GradientStop Offset="1" Color="#08FFFFFF" />
-</LinearGradientBrush>
+<SolidColorBrush x:Key="&#228;" Color="Transparent" />
 
 <!--=================================================================
     RibbonMenuItem
