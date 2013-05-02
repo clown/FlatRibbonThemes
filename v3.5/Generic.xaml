@@ -219,9 +219,9 @@ To automatically copy the files, set the environment variable
     <GradientStop Offset="1" Color="#FFFFD178" />
 </LinearGradientBrush>
 
-<SolidColorBrush x:Key="&#227;" Color="#80FFFFFF"  />
-<SolidColorBrush x:Key="&#229;" Color="#B8FFFFFF" />
-<SolidColorBrush x:Key="&#263;" Color="#EEFFFFFF"  />
+<SolidColorBrush x:Key="&#227;" Color="{x:Static SystemColors.ControlColor}"  />
+<SolidColorBrush x:Key="&#229;" Color="{x:Static SystemColors.ControlLightColor}" />
+<SolidColorBrush x:Key="&#263;" Color="{x:Static SystemColors.ControlLightLightColor}"  />
 
 <!-- We use this brush to achieve the exact same gray foreground color for disabled text as Win7 ribbon. 
      However, since this is not from SystemColors, we still need to use triggers to set the disabled
