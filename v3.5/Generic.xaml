@@ -4999,7 +4999,7 @@ To automatically copy the files, set the environment variable
                     <Border Name="PART_HotBackground"
                             Background="{TemplateBinding MouseOverBackground}"
                             BorderBrush="{TemplateBinding MouseOverBorderBrush}"
-                            Opacity="0"
+                            Opacity="1"
                             Grid.RowSpan="2"
                             CornerRadius="2"
                             BorderThickness="1"
