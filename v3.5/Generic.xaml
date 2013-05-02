@@ -7783,7 +7783,8 @@ To automatically copy the files, set the environment variable
     <Setter Property="Template">
         <Setter.Value>
             <ControlTemplate TargetType="{x:Type ribbon:RibbonTab}">
-                <Grid x:Name="MainGrid" Visibility="{TemplateBinding IsSelected, Converter={StaticResource &#212;}}" ClipToBounds="True">
+                <Grid x:Name="MainGrid" Visibility="{TemplateBinding IsSelected, Converter={StaticResource &#212;}}" ClipToBounds="True"
+                    Background="{Binding RelativeSource={RelativeSource TemplatedParent},Path=Background}">
                     <Line x:Name="OuterLeftLine"
                           StrokeThickness="2" 
                           Stroke="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=ContextualTabGroup.Background}"
