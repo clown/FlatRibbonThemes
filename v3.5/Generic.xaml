@@ -8297,7 +8297,7 @@ To automatically copy the files, set the environment variable
                                             <Border x:Name="PART_SubmenuPlaceholder"
                                                     Height="{Binding ElementName=MainPaneBorder,Path=ActualHeight}"
                                                     Grid.Column="2"
-                                                    Background="{StaticResource &#227;}">
+                                                    Background="Transparent">
                                                 <ContentPresenter x:Name="PART_AuxiliaryPaneContentPresenter" 
                                                                   ContentSource="AuxiliaryPaneContent"
                                                                   ContentTemplate="{TemplateBinding AuxiliaryPaneContentTemplate}"
