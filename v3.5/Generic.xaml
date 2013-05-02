@@ -221,7 +221,7 @@ To automatically copy the files, set the environment variable
 
 <SolidColorBrush x:Key="&#227;" Color="{x:Static SystemColors.ControlColor}"  />
 <SolidColorBrush x:Key="&#229;" Color="{x:Static SystemColors.ControlLightColor}" />
-<SolidColorBrush x:Key="&#263;" Color="{x:Static SystemColors.ControlLightLightColor}"  />
+<SolidColorBrush x:Key="&#263;" Color="{x:Static SystemColors.WindowColor}"  />
 
 <!-- We use this brush to achieve the exact same gray foreground color for disabled text as Win7 ribbon. 
      However, since this is not from SystemColors, we still need to use triggers to set the disabled
@@ -1218,6 +1218,7 @@ To automatically copy the files, set the environment variable
 
     <Style x:Key="{x:Type ribbon:RibbonTextBox}" TargetType="{x:Type ribbon:RibbonTextBox}">
         <Setter Property="Background" Value="{StaticResource &#263;}"/>
+        <Setter Property="Foreground" Value="{x:Static SystemColors.WindowTextBrush}" />
         <Setter Property="BorderBrush" Value="{Binding RelativeSource={RelativeSource Self}, Path=Ribbon.BorderBrush}"/>
         <Setter Property="BorderThickness" Value="1"/>
         <Setter Property="AllowDrop" Value="True"/>
@@ -10789,7 +10790,7 @@ To automatically copy the files, set the environment variable
                                 BorderThickness="1"
                                 SnapsToDevicePixels="True">
                             <Path Name="Arrow"
-                                  Fill="{TemplateBinding Foreground}"
+                                  Fill="{x:Static SystemColors.WindowTextBrush}"
                                   Data="{StaticResource &#255;}"
                                   HorizontalAlignment="Center"
                                   VerticalAlignment="Center" />
@@ -10910,7 +10911,7 @@ To automatically copy the files, set the environment variable
                             BorderThickness="1"
                             SnapsToDevicePixels="True">
                         <Path Name="Arrow"
-                              Fill="{TemplateBinding Foreground}"
+                              Fill="{x:Static SystemColors.WindowTextBrush}"
                               Data="{StaticResource &#255;}"
                               HorizontalAlignment="Center"
                               VerticalAlignment="Center" />
@@ -11383,6 +11384,7 @@ To automatically copy the files, set the environment variable
         </Style>
     </Style.Resources>
     <Setter Property="Background" Value="{StaticResource &#263;}"/>
+    <Setter Property="Foreground" Value="{x:Static SystemColors.WindowTextBrush}" />
     <Setter Property="BorderBrush" Value="{Binding RelativeSource={RelativeSource Self}, Path=Ribbon.BorderBrush}"/>
     <Setter Property="BorderThickness" Value="1"/>
     <Setter Property="Padding" Value="2,1,2,1" />
