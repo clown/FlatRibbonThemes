@@ -27,6 +27,7 @@ FlatRibbonThemes の *.xaml は、以下の色、効果を修正します。括�
 * RibbonMenuItem
     * Background (&#239) を修正
     * Foreground を SystemColors.MenuTextBrush に修正
+    * SideBarBorder の BorderBrush, Background をそれぞれ Ribbon.CheckdedBorderBrush, Ribbon.CheckedBackground に対応
     * SideBarOverlay.Background (&#228) を修正
 * RibbonGalleryItem
     * Foreground を SystemColors.MenuTextBrush に修正

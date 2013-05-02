@@ -5166,8 +5166,8 @@ To automatically copy the files, set the environment variable
                             <Border x:Name="PART_SideBarBorder"
                                     Margin="0,-1,0,-1"
                                     BorderThickness="0,0,1,0"
-                                    Background="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Ribbon.Background}"
-                                    BorderBrush="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Ribbon.BorderBrush}">
+                                    Background="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Ribbon.CheckedBackground}"
+                                    BorderBrush="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Ribbon.CheckedBorderBrush}">
                                 <Grid x:Name="SideBarOverlay"
                                       Background="{StaticResource &#228;}">
                                     <Image x:Name="Image"
