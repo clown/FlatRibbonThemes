@@ -4384,6 +4384,7 @@ To automatically copy the files, set the environment variable
     <Style x:Key="{x:Type ribbon:RibbonGalleryItem}"  TargetType="{x:Type ribbon:RibbonGalleryItem}">
         <Setter Property="Background" Value="Transparent" />
         <Setter Property="BorderBrush" Value="Transparent" />
+        <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.MenuTextBrushKey}}" />
         <Setter Property="BorderThickness" Value="1" />
         <Setter Property="FocusVisualStyle" Value="{x:Null}" />
         <Setter Property="MouseOverBorderBrush" Value="{Binding RelativeSource={RelativeSource Self}, Path=Ribbon.MouseOverBorderBrush}" />
