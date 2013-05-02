@@ -7958,12 +7958,7 @@ To automatically copy the files, set the environment variable
 <SolidColorBrush x:Key="&#215;" Color="#FF114EAF" />
 
 <!-- Semi-transparent brushes which produce tints of the main BorderBrush color or the Ribbon colors. -->
-<LinearGradientBrush x:Key="&#216;" StartPoint="0,0" EndPoint="0,1">
-    <GradientStop Offset="0" Color="#90FFFFFF" />
-    <GradientStop Offset="0.5" Color="#30FFFFFF" />
-    <GradientStop Offset="0.5" Color="Transparent" />
-    <GradientStop Offset="1" Color="#70FFFFFF" />
-</LinearGradientBrush>
+<SolidColorBrush x:Key="&#216;" Color="Transparent" />
 
 <LinearGradientBrush x:Key="&#217;" StartPoint="0,0" EndPoint="0,1">
     <GradientStop Offset="0" Color="#60FFFFFF" />
