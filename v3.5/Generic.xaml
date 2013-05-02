@@ -3716,7 +3716,7 @@ To automatically copy the files, set the environment variable
                                                         Margin="1" />
                                                 <Path x:Name="CheckMark"
                                                       Stroke="{DynamicResource {x:Static SystemColors.ControlLightBrushKey}}"
-                                                      Fill="{TemplateBinding Foreground}"
+                                                      Fill="{x:Static SystemColors.WindowTextBrush}"
                                                       StrokeThickness="0.4"
                                                       Data="{StaticResource &#235;}"
                                                       FlowDirection="LeftToRight"
