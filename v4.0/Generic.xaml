@@ -5730,14 +5730,7 @@ To automatically copy the files, set the environment variable
         RibbonSplitButton
         ==================================================================-->
     
-<LinearGradientBrush x:Key="&#295;" StartPoint="0,0" EndPoint="0,1">
-    <GradientStop Offset="0" Color="#FFFFFFFF" />
-    <GradientStop Offset="0.19" Color="#AAFFFFFF" />
-    <GradientStop Offset="0.39" Color="#77FFFFFF" />
-    <GradientStop Offset="0.39" Color="#77FFFFFF" />
-    <GradientStop Offset="0.79" Color="#AAFFFFFF" />
-    <GradientStop Offset="1" Color="#FFFFFFFF" />
-</LinearGradientBrush>
+<SolidColorBrush x:Key="&#295;" Color="Transparent"/>    
 
 <Style TargetType="{x:Type ribbon:RibbonSplitButton}">
     <Style.Resources>

@@ -30,6 +30,8 @@ FlatRibbonThemes の *.xaml は、以下の色、効果を修正します。括�
     * SideBarOverlay.Background (&#228) を修正
 * RibbonGalleryItem
     * Foreground を SystemColors.MenuTextBrush に修正
+* RibbonSplitButton
+    * MouseOver 時の背景色 (&#295) を修正
 * RibbonTextBox
     * Foreground を SystemColors.WindowTextBrush に修正
 * RibbonCheckBox
