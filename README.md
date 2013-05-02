@@ -22,6 +22,7 @@ FlatRibbonThemes の *.xaml は、以下の色、効果を修正します。括�
     * ボタンの背景色 (&216) を修正
     * ボタンの上部枠線の効果 (&#217) は未修整
     * Header, MainPane, Footer の枠線 (&#227)、および背景色 (&#218, &#220, &#229) を修正
+    * PopupBorder の BorderBrush, Background をそれぞれ RibbonApplicationMenu の FocusedBorderBrush, FocusedBackground に対応
 * RibbonMenuItem
     * Background (&#239) を修正
     * Foreground を SystemColors.MenuTextBrush に修正
@@ -46,6 +47,9 @@ FlatRibbonThemes の *.xaml は、以下の色、効果を修正します。括�
 4. Visual Studio でビルドを実行し、RibbonControlsLibrary プロジェクトが生成した RibbonControlsLibrary.dll を標準の dll の代わりに使用します。
 
 ## History
+
+### 2013-05-03
+* RibbonApplicationMenu のポップアップメニューの色をカスタマイズ可能なように修正
 
 ### 2013-05-02
 * 修正方法を変更しました（各コンポーネントを直接変更する代わりに、できる限り定義されているキーを修正）。
