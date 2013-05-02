@@ -53,7 +53,9 @@ FlatRibbonThemes の *.xaml は、以下の色、効果を修正します。括�
 ## History
 
 ### 2013-05-03
-* RibbonApplicationMenu のポップアップメニューの色をカスタマイズ可能なように修正
+* RibbonApplicationMenu のポップアップメニューの色をカスタマイズ可能なように修正しました。
+* RibbonGroup の Header を非表示に修正しました。
+* RibbonMenuItem の SideBarBorder の色を修正しました。
 
 ### 2013-05-02
 * 修正方法を変更しました（各コンポーネントを直接変更する代わりに、できる限り定義されているキーを修正）。
