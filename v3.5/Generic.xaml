@@ -8167,6 +8167,8 @@ To automatically copy the files, set the environment variable
     </Style.Resources>
     <Setter Property="BorderBrush" Value="{StaticResource &#215;}" />
     <Setter Property="Background" Value="{StaticResource &#215;}" />
+    <Setter Property="FocusedBorderBrush" Value="{Binding RelativeSource={RelativeSource AncestorType={x:Type ribbon:RibbonApplicationMenu}}, Path=Ribbon.BorderBrush}" />
+    <Setter Property="FocusedBackground" Value="{Binding RelativeSource={RelativeSource AncestorType={x:Type ribbon:RibbonApplicationMenu}}, Path=Ribbon.Background}" />
     <Setter Property="BorderThickness" Value="1" />
     <Setter Property="FocusVisualStyle" Value="{x:Null}" />
     <Setter Property="Height" Value="23" />
@@ -8211,8 +8213,8 @@ To automatically copy the files, set the environment variable
                         >
                             <Grid>
                                 <Border x:Name="PopupBorder"
-                                        BorderBrush="{Binding RelativeSource={RelativeSource AncestorType={x:Type ribbon:RibbonMenuButton}}, Path=Ribbon.BorderBrush}"
-                                        Background="{Binding RelativeSource={RelativeSource AncestorType={x:Type ribbon:RibbonMenuButton}}, Path=Ribbon.Background}"
+                                        BorderBrush="{TemplateBinding FocusedBorderBrush}"
+                                        Background="{TemplateBinding FocusedBackground}"
                                         BorderThickness="1"
                                         CornerRadius="2">
                                     <Grid>
@@ -8222,12 +8224,12 @@ To automatically copy the files, set the environment variable
                                             <RowDefinition Height="Auto" />
                                         </Grid.RowDefinitions>
                                         <Border x:Name="HeaderBorder"
-                                                BorderBrush="{Binding RelativeSource={RelativeSource AncestorType={x:Type ribbon:RibbonMenuButton}}, Path=Ribbon.BorderBrush}"
+                                                BorderBrush="{TemplateBinding FocusedBorderBrush}"
                                                 Background="Transparent"
                                                 BorderThickness="0,0,0,1"
                                                 CornerRadius="2,2,0,0" />
                                         <Border x:Name="HeaderOverlayBorder"
-                                                BorderBrush="{Binding RelativeSource={RelativeSource AncestorType={x:Type ribbon:RibbonMenuButton}}, Path=Ribbon.BorderBrush}"
+                                                BorderBrush="{TemplateBinding FocusedBorderBrush}"
                                                 Background="{StaticResource &#218;}"
                                                 BorderThickness="0,0,0,1"
                                                 CornerRadius="2,2,0,0" />
@@ -8280,7 +8282,7 @@ To automatically copy the files, set the environment variable
                                                             Grid.Row="2"
                                                             Visibility="Collapsed"
                                                             Background="{StaticResource &#230;}" 
-                                                            BorderBrush="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Ribbon.BorderBrush}"
+                                                            BorderBrush="{TemplateBinding FocusedBorderBrush}"
                                                             BorderThickness="0,1,0,0">
                                                         <Thumb x:Name="PART_ResizeThumb"  
                                                                Style="{StaticResource &#231;}"/>
@@ -8302,7 +8304,7 @@ To automatically copy the files, set the environment variable
                                                     Background="White"
                                                     Width="1"
                                                     BorderThickness="1,0,0,0"
-                                                    BorderBrush="{Binding RelativeSource={RelativeSource AncestorType={x:Type ribbon:RibbonMenuButton}}, Path=Ribbon.BorderBrush}" />
+                                                    BorderBrush="{TemplateBinding FocusedBorderBrush}" />
                                             <Border x:Name="VerticalOverlayBorder"
                                                     Grid.Column="1"
                                                     HorizontalAlignment="Left"
@@ -8314,7 +8316,7 @@ To automatically copy the files, set the environment variable
 
                                         <Border x:Name="FooterBorder"
                                                 Grid.Row="2"
-                                                BorderBrush="{Binding RelativeSource={RelativeSource AncestorType={x:Type ribbon:RibbonMenuButton}}, Path=Ribbon.BorderBrush}"
+                                                BorderBrush="{TemplateBinding FocusedBorderBrush}"
                                                 Background="Transparent"
                                                 BorderThickness="0,1,0,0"
                                                 CornerRadius="0,0,2,2">
@@ -8333,7 +8335,7 @@ To automatically copy the files, set the environment variable
                                         <Border x:Name="FooterOverlayBorder"
                                                 VerticalAlignment="Stretch"
                                                 HorizontalAlignment="Stretch"
-                                                BorderBrush="{Binding RelativeSource={RelativeSource AncestorType={x:Type ribbon:RibbonMenuButton}}, Path=Ribbon.BorderBrush}"
+                                                BorderBrush="{TemplateBinding FocusedBorderBrush}"
                                                 Background="Transparent"
                                                 BorderThickness="0,1,0,0"
                                                 CornerRadius="0,0,2,2" />
@@ -8345,8 +8347,8 @@ To automatically copy the files, set the environment variable
                                                                Canvas.Top="-24"
                                                                Canvas.Left="3"
                                                                IsChecked="{Binding  RelativeSource={RelativeSource TemplatedParent}, Path=IsDropDownOpen}"
-                                                               BorderBrush="{TemplateBinding BorderBrush}"
-                                                               Background="{TemplateBinding Background}"
+                                                               BorderBrush="{TemplateBinding FocusedBorderBrush}"
+                                                               Background="{TemplateBinding FocusedBackground}"
                                                                BorderThickness="{TemplateBinding BorderThickness}"                                              
                                                                Style="{StaticResource &#223;}"
                                                                Focusable="False"
