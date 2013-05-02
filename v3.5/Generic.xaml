@@ -254,7 +254,7 @@ To automatically copy the files, set the environment variable
 <system:Double x:Key="&#260;">22.0</system:Double>
 
 <!-- Ribbon, RibbonGroup -->
-<system:Double x:Key="&#211;">91.0</system:Double>
+<system:Double x:Key="&#211;">77.0</system:Double> <!-- 91.0 -->
 <system:Double x:Key="&#214;">94.0</system:Double>
 
 <!-- RibbonToolTip -->
@@ -4869,7 +4869,7 @@ To automatically copy the files, set the environment variable
             <Grid.RowDefinitions>
                 <RowDefinition Height="*" />
                 <RowDefinition Height="Auto" />
-                <RowDefinition Height="Auto" MinHeight="16" />
+                <RowDefinition Height="Auto" MinHeight="0" />
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
@@ -4959,7 +4959,7 @@ To automatically copy the files, set the environment variable
 <ControlTemplate x:Key="&#291;" TargetType="{x:Type ribbon:RibbonGroup}">
     <Grid x:Name="MainGrid">
         <ribbon:RibbonToggleButton x:Name="PART_ToggleButton" 
-                                                   Margin="0,3,0,0"
+                                                   Margin="0,1,0,0"
                                                    Style="{StaticResource &#288;}"
                                                    Content="{TemplateBinding Header}"
                                                    ContentTemplate="{TemplateBinding HeaderTemplate}"
@@ -4990,7 +4990,7 @@ To automatically copy the files, set the environment variable
                 <Grid Name="PopupGrid" Height="{TemplateBinding ActualHeight}" Margin="0,1.5,0,0">
                     <Grid.RowDefinitions>
                         <RowDefinition Height="*" />
-                        <RowDefinition Height="Auto" MinHeight="16" />
+                        <RowDefinition Height="Auto" MinHeight="0" />
                     </Grid.RowDefinitions>
                     <Border Name="PopupBorder" Grid.RowSpan="2"
                             Background="{TemplateBinding Background}"
@@ -5013,7 +5013,7 @@ To automatically copy the files, set the environment variable
                             <ContentControl Name="TemplateContentControl" Visibility="Collapsed" Focusable="False"/>
                         </Grid>
                     </Border>
-                    <Grid Margin="2,0,2,1" Grid.Row="1">
+                    <Grid Margin="2,0,2,1" Grid.Row="1" Visibility="Collapsed">
                         <ContentPresenter Name="PART_Header"
                                           TextElement.Foreground="{StaticResource &#203;}"
                                           ContentSource="Header"
