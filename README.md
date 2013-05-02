@@ -18,8 +18,9 @@ FlatRibbonThemes の *.xaml は、以下の色、効果を修正します。括�
     * RibbonTabHeader は未修整なので、RibbonTabHeader.CheckedBackground を適宜指定する事
 * RibbonGroup
     * マウスオーバ時の背景色 (&#278, &#279, &#284) を修正
+    * Header を非表示に修正
 * RibbonApplicationMenu
-    * ボタンの背景色 (&216) を修正
+    * ボタンの背景色 (&#216) を修正
     * ボタンの上部枠線の効果 (&#217) は未修整
     * Header, MainPane, Footer の枠線 (&#227)、および背景色 (&#218, &#220, &#229) を修正
     * PopupBorder の BorderBrush, Background をそれぞれ RibbonApplicationMenu の FocusedBorderBrush, FocusedBackground に対応
