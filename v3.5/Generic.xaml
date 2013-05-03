@@ -5886,18 +5886,11 @@ To automatically copy the files, set the environment variable
                                                      ToolTipService.ShowDuration="{StaticResource &#225;}"
                                                      ToolTipService.BetweenShowDelay="{StaticResource &#226;}">
                                     <ribbon:RibbonButton.ControlSizeDefinition>
-                                        <ribbon:RibbonControlSizeDefinition ImageSize="Large" IsLabelVisible="False" />
+                                        <ribbon:RibbonControlSizeDefinition ImageSize="Large" IsLabelVisible="True" />
                                     </ribbon:RibbonButton.ControlSizeDefinition>
                                     <ribbon:RibbonButton.QuickAccessToolBarControlSizeDefinition>
                                         <ribbon:RibbonControlSizeDefinition ImageSize="Small" IsLabelVisible="False" />
                                     </ribbon:RibbonButton.QuickAccessToolBarControlSizeDefinition>
-                                    <ribbon:RibbonButton.Resources>
-                                        <Thickness x:Key="{ComponentResourceKey TypeInTargetAssembly={x:Type ribbon:Ribbon}, ResourceId=LargeImageMargin}"
-                                                    Left="1"
-                                                    Top="1"
-                                                    Right="1"
-                                                    Bottom="0" />
-                                    </ribbon:RibbonButton.Resources>
                                 </ribbon:RibbonButton>
                                 <Grid>
                                     <Border x:Name="UnderlayBorder" Opacity="0.5" Visibility="Collapsed" Background="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MouseOverBackground}"/>
@@ -5905,7 +5898,7 @@ To automatically copy the files, set the environment variable
                                     <ribbon:RibbonToggleButton x:Name="PART_ToggleButton"
                                                                Style="{x:Null}"
                                                                Template="{StaticResource &#292;}"
-                                                               Label="{TemplateBinding Label}"
+                                                               Label=""
                                                                ribbon:RibbonTwoLineText.PathData="{StaticResource &#255;}"
                                                                BorderBrush="{TemplateBinding BorderBrush}"
                                                                Background="Transparent"
@@ -6049,9 +6042,9 @@ To automatically copy the files, set the environment variable
                     <!-- Large Variant -->
                     <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=ControlSizeDefinition.ImageSize}" Value="Large">
                         <Setter Property="MinWidth" Value="44"/>
-                        <Setter TargetName="PART_HeaderButton" Property="Height" Value="37" />
-                        <Setter TargetName="PART_ToggleButton" Property="Height" Value="29" />
-                        <Setter TargetName="PART_ToggleButton" Property="ribbon:RibbonTwoLineText.HasTwoLines" Value="true" />
+                        <Setter TargetName="PART_HeaderButton" Property="Height" Value="56" />
+                        <Setter TargetName="PART_ToggleButton" Property="Height" Value="10" />
+                        <Setter TargetName="PART_ToggleButton" Property="ribbon:RibbonTwoLineText.HasTwoLines" Value="False" />
                         <Setter TargetName="StackPanel" Property="Orientation" Value="Vertical" />
                         <Setter TargetName="PART_HeaderButton" Property="CornerRadius" Value="2,2,0,0" />
                         <Setter TargetName="PART_ToggleButton" Property="CornerRadius" Value="0,0,2,2" />
