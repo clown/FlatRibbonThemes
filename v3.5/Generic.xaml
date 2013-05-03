@@ -254,7 +254,7 @@ To automatically copy the files, set the environment variable
 <system:Double x:Key="&#260;">22.0</system:Double>
 
 <!-- Ribbon, RibbonGroup -->
-<system:Double x:Key="&#211;">77.0</system:Double> <!-- 91.0 -->
+<system:Double x:Key="&#211;">78.0</system:Double> <!-- 91.0 -->
 <system:Double x:Key="&#214;">94.0</system:Double>
 
 <!-- RibbonToolTip -->
@@ -1742,7 +1742,7 @@ To automatically copy the files, set the environment variable
                                 <DropShadowEffect Color="White" BlurRadius="15.0" ShadowDepth="0"/>
                             </Grid.Effect>
 
-                            <primitives:RibbonQuickAccessToolBarPanel IsItemsHost="true" Name="PART_MainPanel" Grid.Column="0"/>
+                            <primitives:RibbonQuickAccessToolBarPanel IsItemsHost="true" x:Name="PART_MainPanel" Grid.Column="0"/>
                             
                             <ContentPresenter Name="MainCustomizeMenuHost"
                                               Grid.Column="2"
@@ -3392,7 +3392,7 @@ To automatically copy the files, set the environment variable
             <!-- Large Variant -->
             <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=ControlSizeDefinition.ImageSize}" Value="Large">
                 <Setter Property="MinWidth" Value="44"/>
-                <Setter Property="Height" Value="66"/>
+                <Setter Property="Height" Value="70"/>
                 <Setter TargetName="Grid" Property="MinHeight" Value="26" />
                 <Setter TargetName="TwoLineText" Property="HasTwoLines" Value="True" />
             </DataTrigger>
@@ -6042,8 +6042,8 @@ To automatically copy the files, set the environment variable
                     <!-- Large Variant -->
                     <DataTrigger Binding="{Binding RelativeSource={RelativeSource Self}, Path=ControlSizeDefinition.ImageSize}" Value="Large">
                         <Setter Property="MinWidth" Value="44"/>
-                        <Setter TargetName="PART_HeaderButton" Property="Height" Value="56" />
-                        <Setter TargetName="PART_ToggleButton" Property="Height" Value="10" />
+                        <Setter TargetName="PART_HeaderButton" Property="Height" Value="54" />
+                        <Setter TargetName="PART_ToggleButton" Property="Height" Value="16" />
                         <Setter TargetName="PART_ToggleButton" Property="ribbon:RibbonTwoLineText.HasTwoLines" Value="False" />
                         <Setter TargetName="StackPanel" Property="Orientation" Value="Vertical" />
                         <Setter TargetName="PART_HeaderButton" Property="CornerRadius" Value="2,2,0,0" />
