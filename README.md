@@ -24,6 +24,7 @@ FlatRibbonThemes の *.xaml は、以下の色、効果を修正します。括�
     * ボタンの上部枠線の効果 (&#217) は未修整
     * Header, MainPane, Footer の枠線 (&#227)、および背景色 (&#218, &#220, &#229) を修正
     * PopupBorder の BorderBrush, Background をそれぞれ RibbonApplicationMenu の FocusedBorderBrush, FocusedBackground に対応
+    * DownArrow の色を修正（NOTE: #FFCCCCCC 固定なので、カスタマイズ可能な形にする）
 * RibbonMenuItem
     * Background (&#239) を修正
     * Foreground を SystemColors.MenuTextBrush に修正
@@ -33,6 +34,7 @@ FlatRibbonThemes の *.xaml は、以下の色、効果を修正します。括�
     * Foreground を SystemColors.MenuTextBrush に修正
 * RibbonSplitButton
     * MouseOver 時の背景色 (&#295) を修正
+    * 下半分のみ有効な場合の MouseOver 時の枠線を修正
 * RibbonTextBox
     * Foreground を SystemColors.WindowTextBrush に修正
 * RibbonCheckBox
@@ -54,8 +56,10 @@ FlatRibbonThemes の *.xaml は、以下の色、効果を修正します。括�
 
 ### 2013-05-03
 * RibbonApplicationMenu のポップアップメニューの色をカスタマイズ可能なように修正しました。
+* RibbonApplicationMenu の矢印の色を修正しました。
 * RibbonGroup の Header を非表示に修正しました。
 * RibbonMenuItem の SideBarBorder の色を修正しました。
+* RibbonSplitButton のマウスオーバ時の色を修正しました。
 
 ### 2013-05-02
 * 修正方法を変更しました（各コンポーネントを直接変更する代わりに、できる限り定義されているキーを修正）。

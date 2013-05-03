@@ -6243,7 +6243,7 @@ To automatically copy the files, set the environment variable
                             <Condition Property="IsEnabled" Value="False" SourceName="PART_HeaderButton" />
                             <Condition Property="IsMouseOver" Value="True"/>
                         </MultiTrigger.Conditions>
-                        <Setter TargetName="PART_HeaderButton" Property="BorderBrush" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=Ribbon.BorderBrush}" />
+                        <Setter TargetName="PART_HeaderButton" Property="BorderBrush" Value="{DynamicResource {x:Static SystemColors.ControlDarkDarkBrushKey}}" />
                         <Setter TargetName="UnderlayBorder" Property="Visibility" Value="Visible" />
                         <Setter TargetName="PART_ToggleButton" Property="BorderBrush" Value="{Binding RelativeSource={RelativeSource TemplatedParent}, Path=MouseOverBorderBrush}" />
                     </MultiTrigger>
@@ -8030,7 +8030,7 @@ To automatically copy the files, set the environment variable
                               Data="{StaticResource &#222;}"
                               Stroke="{StaticResource &#216;}"
                               StrokeThickness=".5"
-                              Fill="{TemplateBinding Foreground}"
+                              Fill="#FFCCCCCC"
                               HorizontalAlignment="Center"
                               VerticalAlignment="Center"
                               Margin="3.5,0,0,0">
